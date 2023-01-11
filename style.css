@@ -45,6 +45,26 @@ nav ul li{
     border-radius: 10px;
 }
 
+.hamAndCross{
+    display: none;
+}
+.cross{
+    display: none;
+}
+
+.meanu{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+}
+.meanu ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
 /* ---------------------------main------------------- */
 .content{
     display: flex;
@@ -66,4 +86,95 @@ nav ul li{
 
 .banner{
     width: 100%;
+}
+
+
+@media only screen and (max-width:400px){
+    body{
+        background-color: #2d2b2b;
+        padding: 0 8%;
+        color: #ffffff;
+    }
+    .hamAndCross{
+        display: block;
+    }
+    .ulList{
+        display: none;
+    }
+
+    .content{
+        display: flex;
+        /* justify-content: space-between;
+        align-items: center; */
+        /* margin: 45px 0px; */
+        flex-direction: column;
+    }
+    .content h1{
+        width: 100%;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .content p{
+        width: 100%;
+        text-align: center;
+        color: #dddada;
+    }
+}
+
+@media only screen and (max-width:775px){
+    body{
+        background-color: #2d2b2b;
+        padding: 0 8%;
+        color: #ffffff;
+    }
+    .hamAndCross{
+        display: block;
+    }
+    .ulList{
+        display: none;
+    }
+}
+/* 
+@media only screen and (max-width:695px) and (min-width:400px){
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content h1{
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .content p{
+        width: 100%;
+        text-align: center;
+        color: #dddada;
+    }
+} */
+
+
+@media only screen and (min-width:400px) and (max-width:695px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .content h1{
+        width: 100%;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 900;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .content p{
+        width: 100%;
+        text-align: center;
+        color: #dddada;
+    }
 }
